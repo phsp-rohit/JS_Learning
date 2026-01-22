@@ -35,3 +35,22 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+// Stack(Primitiive), Heap (Non-Primitive)
+
+let myYouTubeChannel = "RohitTechdotcom";
+
+let anotherChannel = myYouTubeChannel;
+anotherChannel = "CodeWithRohit";
+
+console.log({myYouTubeChannel, anotherChannel});
+
+let userOne = {
+    name: "Rohit",
+    email: "rohit@gmail.com",   
+    age: 24,
+}
+let userTwo = userOne;
+userTwo.age = 25; 
+console.log({userOne, userTwo});      
